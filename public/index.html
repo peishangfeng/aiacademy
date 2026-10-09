@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宇賢教育学院｜AI音楽創作講座</title>
+  <meta name="description" content="全5回の子ども向けAI創作講座。AIと一緒に、世界にひとつだけの音楽作品をつくる。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slides.css">
+</head>
+<body>
+  <!--
+    文章の直し方
+    下の <section class="slide"> の中の文字を書き換えて保存します。
+    画像を差し替えるときは public/images/ のファイルを置き換えるか、img の src を変えます。
+    スライドを増やすときは section をコピーします。枚数と一覧は自動で数え直します。
+    見た目は slides.css、移動の操作は slides.js です。
+  -->
+
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <main class="deck" id="deck">
+
+    <!-- 01 表紙 -->
+    <section class="slide slide-hero is-active">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker"><span class="num">01</span> 全5回の子ども向けAI創作講座</p>
+          <h1>AIと一緒に、<br>世界にひとつだけの<br>音楽作品をつくろう！</h1>
+          <p class="lead">子どもたちが主役の「AI × 音楽 × 映像」創作体験</p>
+          <p class="pill">5回で、歌・ジャケット・MVまでつくる！</p>
+        </div>
+        <figure class="figure">
+          <img src="images/cover.png" alt="ギター、歌、キーボードで音楽をつくる三人の子ども">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 講座コンセプト -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">02</span>
+        <p class="eyebrow">講座コンセプト</p>
+      </div>
+      <h2>創作の主役は、子どもたち</h2>
+      <p class="theme">AIは、アイデアを形にする道具</p>
+      <ol class="steps steps-3">
+        <li>
+          <span>01</span>
+          <div>
+            <h3>考える</h3>
+            <p>どんな気持ちを<br>作品にしたい？</p>
+          </div>
+        </li>
+        <li>
+          <span>02</span>
+          <div>
+            <h3>試す</h3>
+            <p>AIに伝えて<br>いくつか作ってみる</p>
+          </div>
+        </li>
+        <li>
+          <span>03</span>
+          <div>
+            <h3>選ぶ・直す</h3>
+            <p>みんなで話して<br>自分たちらしくする</p>
+          </div>
+        </li>
+      </ol>
+      <p class="closing-line">思いつきが、歌になり、絵になり、映像になる。</p>
+    </section>
+
+    <!-- 03 ロードマップ -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">03</span>
+        <p class="eyebrow">全5回</p>
+      </div>
+      <h2>全5回のロードマップ</h2>
+      <div class="road">
+        <article data-tone="1">
+          <p class="round">第1回</p>
+          <h3>体験</h3>
+          <p>AIを知る</p>
+          <p class="chip">作品のイメージ</p>
+        </article>
+        <article data-tone="2">
+          <p class="round">第2回</p>
+          <h3>歌づくり</h3>
+          <p>歌詞と曲を選ぶ</p>
+          <p class="chip">歌詞・楽曲</p>
+        </article>
+        <article data-tone="3">
+          <p class="round">第3回</p>
+          <h3>デザイン</h3>
+          <p>世界観を描く</p>
+          <p class="chip">ジャケット・ポスター</p>
+        </article>
+        <article data-tone="4">
+          <p class="round">第4回</p>
+          <h3>映像</h3>
+          <p>写真や動画を撮る</p>
+          <p class="chip">MVの映像素材</p>
+        </article>
+        <article data-tone="5">
+          <p class="round">第5回</p>
+          <h3>発表</h3>
+          <p>仕上げて届ける</p>
+          <p class="chip">完成MV・クレジット</p>
+        </article>
+      </div>
+      <p class="closing-line">毎回10分のAIミニ授業 ＋ 手を動かす創作体験</p>
+    </section>
+
+    <!-- 04 第1回 -->
+    <section class="slide slide-session" data-tone="1">
+      <div class="slide-head">
+        <span class="num">04</span>
+        <p class="eyebrow">第1回</p>
+      </div>
+      <h2>AIって何？ まずは体験</h2>
+      <p class="theme">知る・見る・ワクワクする</p>
+      <div class="session-body">
+        <ol class="steps">
+          <li><span>01</span><p>完成イメージをみんなで見る</p></li>
+          <li><span>02</span><p>文章・音楽・画像・映像のデモ</p></li>
+          <li><span>03</span><p>使う道具と基本の約束を知る</p></li>
+        </ol>
+        <figure class="figure">
+          <img src="images/session-1.png" alt="タブレットと小さなロボットを見て驚く男の子">
+        </figure>
+      </div>
+      <p class="goal"><span>今日のゴール</span>つくりたい作品のイメージ</p>
+    </section>
+
+    <!-- 05 第2回 -->
+    <section class="slide slide-session" data-tone="2">
+      <div class="slide-head">
+        <span class="num">05</span>
+        <p class="eyebrow">第2回</p>
+      </div>
+      <h2>みんなで歌詞と音楽づくり</h2>
+      <p class="theme">考える・話し合う・選ぶ</p>
+      <div class="session-body">
+        <ol class="steps">
+          <li><span>01</span><p>好きな言葉や気持ちを出し合う</p></li>
+          <li><span>02</span><p>AIの歌詞を自分たちの言葉に直す</p></li>
+          <li><span>03</span><p>曲調を聴き比べ、みんなで選ぶ</p></li>
+        </ol>
+        <figure class="figure">
+          <img src="images/session-2.png" alt="ヘッドホンで曲を聴く女の子と、歌詞を書いている男の子">
+        </figure>
+      </div>
+      <p class="goal"><span>今日のゴール</span>オリジナルの歌詞と楽曲</p>
+    </section>
+
+    <!-- 06 第3回 -->
+    <section class="slide slide-session" data-tone="3">
+      <div class="slide-head">
+        <span class="num">06</span>
+        <p class="eyebrow">第3回</p>
+      </div>
+      <h2>ジャケットとポスターづくり</h2>
+      <p class="theme">想像する・伝える・デザインする</p>
+      <div class="session-body">
+        <ol class="steps">
+          <li><span>01</span><p>歌の世界を色や言葉で表す</p></li>
+          <li><span>02</span><p>AIとジャケットの画像をつくる</p></li>
+          <li><span>03</span><p>タイトルを入れてポスターにする</p></li>
+        </ol>
+        <figure class="figure">
+          <img src="images/session-3.png" alt="タブレットで惑星のイラストを描いている女の子">
+        </figure>
+      </div>
+      <p class="goal"><span>今日のゴール</span>作品の顔になるビジュアル</p>
+    </section>
+
+    <!-- 07 第4回 -->
+    <section class="slide slide-session" data-tone="4">
+      <div class="slide-head">
+        <span class="num">07</span>
+        <p class="eyebrow">第4回</p>
+      </div>
+      <h2>自分たちが登場する映像づくり</h2>
+      <p class="theme">参加する・表現する・映像にする</p>
+      <div class="session-body">
+        <ol class="steps">
+          <li><span>01</span><p>写真や短い動画を撮影する</p></li>
+          <li><span>02</span><p>AIも使いながら映像素材をつくる</p></li>
+          <li><span>03</span><p>音楽に合う場面をみんなで選ぶ</p></li>
+        </ol>
+        <figure class="figure">
+          <img src="images/session-4.png" alt="カメラで撮影する男の子と、ポーズをとる女の子">
+        </figure>
+      </div>
+      <p class="goal"><span>今日のゴール</span>一人ひとりが参加した映像素材</p>
+      <p class="note">顔出し以外に、手元・後ろ姿・イラストでの参加も選べます</p>
+    </section>
+
+    <!-- 08 第5回 -->
+    <section class="slide slide-session" data-tone="5">
+      <div class="slide-head">
+        <span class="num">08</span>
+        <p class="eyebrow">第5回</p>
+      </div>
+      <h2>作品完成！ みんなで発表</h2>
+      <p class="theme">完成させる・発表する・共有する</p>
+      <div class="session-body">
+        <ol class="steps">
+          <li><span>01</span><p>歌・画像・映像をひとつのMVへ</p></li>
+          <li><span>02</span><p>工夫したところを自分の言葉で紹介</p></li>
+          <li><span>03</span><p>制作者名と共有範囲を確認する</p></li>
+        </ol>
+        <figure class="figure">
+          <img src="images/session-5.png" alt="完成した音楽映像を家族で見て拍手している">
+        </figure>
+      </div>
+      <p class="goal"><span>今日のゴール</span>完成MVと「できた！」の実感</p>
+    </section>
+
+    <!-- 09 AIミニ授業 -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">09</span>
+        <p class="eyebrow">毎回10分</p>
+      </div>
+      <h2>毎回10分の「AIミニ授業」</h2>
+      <p class="theme">つくる体験に、「なぜ？」「どう使う？」を重ねる</p>
+      <div class="road lessons">
+        <article data-tone="1">
+          <p class="round">第1回</p>
+          <h3>AIの過去</h3>
+          <p>AIはどこから来たの？</p>
+        </article>
+        <article data-tone="2">
+          <p class="round">第2回</p>
+          <h3>AIの現在</h3>
+          <p>何ができて、何が苦手？</p>
+        </article>
+        <article data-tone="3">
+          <p class="round">第3回</p>
+          <h3>生活と未来</h3>
+          <p>暮らしはどう変わる？</p>
+        </article>
+        <article data-tone="4">
+          <p class="round">第4回</p>
+          <h3>仕事の変化</h3>
+          <p>働き方はどう変わる？</p>
+        </article>
+        <article data-tone="5">
+          <p class="round">第5回</p>
+          <h3>人とAI</h3>
+          <p>自分はどう使いたい？</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 育てたい力 -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">10</span>
+        <p class="eyebrow">5つの力</p>
+      </div>
+      <h2>この講座で育てたい力</h2>
+      <ol class="skills">
+        <li>
+          <span>01</span>
+          <h3>発想する力</h3>
+          <p>好き・気になるを、作品の種にする</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3>言葉にする力</h3>
+          <p>イメージを伝え、頼み方を工夫する</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3>選び、確かめる力</h3>
+          <p>AIの答えを比べて、自分で判断する</p>
+        </li>
+        <li>
+          <span>04</span>
+          <h3>協力する力</h3>
+          <p>違うアイデアを聞き、いっしょに決める</p>
+        </li>
+        <li>
+          <span>05</span>
+          <h3>表現し、やり遂げる力</h3>
+          <p>工夫を重ね、完成させて人に伝える</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 11 共有 -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">11</span>
+        <p class="eyebrow">作品の届け方</p>
+      </div>
+      <h2>「できた！」を、家族や友人へ</h2>
+      <p class="theme">作品が、学びを伝えるきっかけになる</p>
+      <div class="audiences">
+        <article>
+          <h3>子ども</h3>
+          <p>「ここを自分で考えた！」</p>
+          <p>工夫を説明できる喜び</p>
+        </article>
+        <article>
+          <h3>家族</h3>
+          <p>作品を囲んで話す</p>
+          <p>挑戦や成長に気づく</p>
+        </article>
+        <article>
+          <h3>友人・SNS</h3>
+          <p>応援や感想が届く</p>
+          <p>次の創作が楽しみに</p>
+        </article>
+      </div>
+      <p class="closing-line">共有するか、誰に見せるかは、本人と保護者で選べます。</p>
+    </section>
+
+    <!-- 12 安心 -->
+    <section class="slide">
+      <div class="slide-head">
+        <span class="num">12</span>
+        <p class="eyebrow">約束</p>
+      </div>
+      <h2>安心してつくり、安心して共有</h2>
+      <div class="safety">
+        <article>
+          <h3>保護者同意</h3>
+          <p>撮影・AIへの素材入力・作品掲載・公開範囲を事前に説明し、項目ごとに確認</p>
+        </article>
+        <article>
+          <h3>顔と名前</h3>
+          <p>顔出しは任意。手元・後ろ姿・イラストも選択可。制作者名はニックネームなどを選べる</p>
+        </article>
+        <article>
+          <h3>YouTube・SNS</h3>
+          <p>公開前に本人・保護者が完成版を確認。一般公開は任意。家族向けの共有も選べる</p>
+        </article>
+        <article>
+          <h3>運営の確認</h3>
+          <p>利用ツールの年齢条件・素材の権利を確認。写真などの保管期間・削除窓口を決める</p>
+        </article>
+      </div>
+      <p class="closing-line">限定公開のリンクも転送される可能性があるため、共有先を確認します。</p>
+    </section>
+
+    <!-- 13 結び -->
+    <section class="slide slide-close">
+      <p class="kicker"><span class="num">13</span></p>
+      <h1>5回で、<br>歌・ジャケット・MVまでつくる！</h1>
+      <p class="lead">自分のアイデアが、みんなの作品になる。</p>
+      <p class="pill">AIと一緒に、世界にひとつだけの音楽作品をつくろう！</p>
+      <p class="sub">子どもたちが主役の「AI × 音楽 × 映像」創作体験</p>
+    </section>
+
+  </main>
+
+  <nav class="chrome" aria-label="スライドの操作">
+    <p class="brand">宇賢教育学院 AIアカデミー</p>
+    <div class="pager">
+      <button type="button" id="prev" aria-label="前のスライド">←</button>
+      <button type="button" id="jump" aria-expanded="false" aria-controls="jump-panel">
+        <span id="current">01</span> / <span id="total">13</span>
+      </button>
+      <button type="button" id="next" aria-label="次のスライド">→</button>
+    </div>
+    <p class="hint">← → またはスワイプ</p>
+  </nav>
+
+  <div class="jump-panel" id="jump-panel" hidden></div>
+  <script src="slides.js"></script>
+</body>
+</html>
