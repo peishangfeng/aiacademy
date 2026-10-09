@@ -329,9 +329,75 @@ h2 {
 }
 
 .slide-close .num { background: #f7f3ec; color: #17233a; }
+.slide-close h1 { font-size: clamp(1.7rem, 2.8vw, 2.7rem); }
 .slide-close .lead, .slide-close .sub { color: rgba(247, 243, 236, 0.78); }
-.slide-close .pill { margin-top: 1.3rem; background: var(--coral); align-self: flex-start; }
-.slide-close .sub { margin-top: 0.9rem; font-weight: 700; }
+.slide-close .pill { margin-top: 0.85rem; background: var(--coral); align-self: flex-start; }
+.slide-close .sub { margin-top: 0.55rem; font-weight: 700; }
+
+.close-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 210px);
+  gap: clamp(0.8rem, 2vw, 1.4rem);
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.session-time {
+  margin: 1rem 0 0;
+  font-weight: 900;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dates li {
+  padding: 0.55rem 0.4rem 0.65rem;
+  border-radius: 14px;
+  background: rgba(247, 243, 236, 0.1);
+  font-weight: 900;
+}
+
+.dates span {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: #f0a080;
+  font-size: 0.75rem;
+}
+
+.qr-card {
+  margin: 0;
+  padding: 0.7rem 0.7rem 0.8rem;
+  border-radius: 22px;
+  background: #fff;
+  color: #17233a;
+  text-align: center;
+}
+
+.qr-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.qr-card figcaption {
+  margin-top: 0.45rem;
+  font-weight: 900;
+}
+
+.qr-card p {
+  margin: 0.25rem 0 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: break-all;
+}
 
 .chrome {
   position: fixed;
@@ -421,6 +487,17 @@ h2 {
 
 @media (max-width: 980px) {
   .hero-grid, .session-body, .steps-3, .audiences { grid-template-columns: 1fr; }
+  .slide-close { justify-content: flex-start; }
+  .close-meta { grid-template-columns: minmax(0, 1fr) 128px; align-items: start; }
+  .dates { grid-template-columns: 1fr; }
+  .dates li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.45rem 0.7rem;
+  }
+  .dates span { margin: 0; }
+  .qr-card p { font-size: 0.58rem; }
   .road { grid-template-columns: 1fr; gap: 0.55rem; }
   .steps-3 li {
     flex-direction: row;
