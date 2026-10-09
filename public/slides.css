@@ -47,19 +47,32 @@ button, a { font: inherit; }
 }
 
 .deck {
-  height: 100dvh;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
 }
 
 .slide {
   display: none;
   height: 100%;
-  overflow: auto;
-  padding: clamp(1.4rem, 3.2vh, 2.6rem) clamp(1.1rem, 4vw, 4.2rem) calc(var(--chrome) + 1rem);
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  padding: clamp(1.4rem, 3.2vh, 2.6rem) clamp(1.1rem, 4vw, 4.2rem) calc(var(--chrome) + env(safe-area-inset-bottom, 0px) + 2rem);
 }
 
 .slide.is-active {
   display: flex;
   flex-direction: column;
+  min-height: 0;
+}
+
+.slide-close .close-copy,
+.slide-close .close-meta {
+  flex: none;
 }
 
 .slide-head, .kicker {
@@ -486,6 +499,16 @@ h2 {
 .jump-panel a.is-current span { color: rgba(255, 255, 255, 0.7); }
 
 @media (max-width: 980px) {
+  .deck { position: relative; }
+  .slide {
+    padding-bottom: calc(var(--chrome) + env(safe-area-inset-bottom, 0px) + 3.5rem);
+  }
+  .slide.is-active {
+    display: block;
+    position: absolute;
+    inset: 0;
+    height: auto;
+  }
   .hero-grid, .session-body, .steps-3, .audiences { grid-template-columns: 1fr; }
   .slide-close { justify-content: flex-start; }
   .close-meta { grid-template-columns: minmax(0, 1fr) 128px; align-items: start; }
